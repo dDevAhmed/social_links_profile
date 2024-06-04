@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+    --primary-color: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    /* --Yellow-Green: #C0E05B; */
+
+    --paragraph-font-size: 14px; /*paragraph*/
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: var(--paragraph-font-size);
+    font-family: "Inter", Poppins;
+}
+
+.profile-card {
+    width: 320px;
+    height: 497px;
+    height: fit-content;
+    background-color: var(--White);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    padding: 30px; 
+    background: var(--Dark-Grey);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-card img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+.profile-card .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.profile-card .location{
+    color: var(--primary-color);
+}
+
+.profile-card .about{
+    font-size: 12px;
+}
+
+.profile-card .profile-link{
+    display: block;
+    background: var(--Grey);
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    color: var(--White);
+    text-decoration: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .qr-card {
+        max-width: 320px;
+    }
+}
