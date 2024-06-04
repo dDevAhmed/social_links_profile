@@ -6,7 +6,6 @@
     --Grey: hsl(0, 0%, 20%);
     --Dark-Grey: hsl(0, 0%, 12%);
     --Off-Black: hsl(0, 0%, 8%);
-    /* --Yellow-Green: #C0E05B; */
 
     --paragraph-font-size: 14px; /*paragraph*/
 }
@@ -32,6 +31,7 @@ body {
 
 .profile-card {
     width: 320px;
+    max-width: 320px;
     height: 497px;
     height: fit-content;
     background-color: var(--White);
@@ -47,6 +47,7 @@ body {
 .profile-card img{
     border-radius: 50%;
     width: 100px;
+    height: auto;
 }
 
 .profile-card .name{
@@ -56,6 +57,8 @@ body {
 
 .profile-card .location{
     color: var(--primary-color);
+    margin-top: -10px;
+    margin-bottom: 30px;
 }
 
 .profile-card .about{
@@ -72,6 +75,12 @@ body {
     text-align: center;
     color: var(--White);
     text-decoration: none;
+    font-weight: 600;
+}
+
+.profile-card .profile-link:hover{
+    background: var(--primary-color);
+    color: var(--Off-Black);
 }
 
 .attribution {
